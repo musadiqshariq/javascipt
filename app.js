@@ -502,6 +502,16 @@
 // Testing Set of Conditions.
 
 // Q.no.1
+// var a = prompt("Enter a single character")
+// if(a.charCodeAt() >= 65 && a.charCodeAt() <= 90){
+//     alert("Capital Letter")
+// }
+// else if(a.charCodeAt() >= 97 && a.charCodeAt() <= 122){
+//     alert("Small Letter")
+// }
+// else{
+//     alert("It is a number")
+// }
 
 // Q.no.2
 // var number1 = parseInt(prompt("Enter Number1"))
@@ -561,11 +571,245 @@
 // }
 
 // Q.no.7
+// var time = parseInt(prompt("Enter time in 24 hour clock format"))
+// if(time >= 0000 && time < 1200){
+//     alert("Good Morning!")
+// }
+// else if(time >= 1200 && time < 1700){
+//     alert("Good Afternoon!")
+// }
+// else if(time >= 1700 && time < 2100){
+//     alert("Good Evening!")
+// }
+// else if(time >= 2100 && time <= 2359){
+//     alert("Good Night!")
+// }
 
 
-//                 ===================================
+//                 ===================================.
 
 
-// Assigment No. 12 - 13
-// If Else And Else If Statements,
-// Testing Set of Conditions.
+// Assigment No. 14 - 16
+// Arrays
+
+// Q.no.1
+// var students = []
+
+// Q.no.2
+// var students = []
+
+// Q.no.3
+// var cities = ["karachi", "hyderabad", "lahore", "islamabad"]
+
+// Q.no.4
+// var numbers = [1,2,3,4,5]
+
+// Q.no.5
+// var booleans = [true, false, true, true, false]
+
+// Q.no.6
+// var arr = ["musadiq", 147, true]
+
+// Q.no.7
+// var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"]
+// document.write("<h1>Qualifications</h1>")
+// for(var i = 1; i < qualifications.length; i++){
+//     document.write(i + ") " + qualifications[i] + "<br>")
+// }
+
+// Q.no.8
+// var students = ["Michael", "John", "Tony"]
+// var scores = [320, 230, 480]
+// var total = 500
+// var percentage1 = (scores[0] / total) * 100
+// var percentage2 = (scores[1] / total) * 100
+// var percentage3 = (scores[2] / total) * 100
+// document.write("Score of " + students[0] + " is " + scores[0] + "." + "Percentage: " + percentage1 + "%" + "<br>")
+// document.write("Score of " + students[1] + " is " + scores[1] + "." + "Percentage: " + percentage2 + "%" + "<br>")
+// document.write("Score of " + students[2] + " is " + scores[2] + "." + "Percentage: " + percentage3 + "%" + "<br>")
+
+// Q.no.9
+// var colors = ["red", "violet", "grey", "black"]
+// document.write("<h1>Original Array</h1>")
+// document.write(colors + "<br>")
+// var color_to_add_at_beginning = prompt("Which color you want to add at beginning?")
+// colors.unshift(color_to_add_at_beginning)
+// document.write(colors + "<br>")
+// var color_to_add_at_end = prompt("Which color you want to add at end?")
+// colors.push(color_to_add_at_end)
+// document.write(colors + "<br>")
+// var color1_to_add_at_begining = prompt("Write color1 you want to add at begining?")
+// var color2_to_add_at_begining = prompt("Write color2 you want to add at begining?")
+// var colors_to_add_at_begining = [color1_to_add_at_begining, color2_to_add_at_begining]
+// colors.unshift(colors_to_add_at_begining)
+// document.write(colors + "<br>")
+// colors.shift()
+// document.write(colors + "<br>")
+// colors.pop()
+// document.write(colors + "<br>")
+// var ind = parseInt(prompt("Write index on which you want to add color"))
+// var color_name = prompt("Write color name")
+// colors.splice(ind, 0, color_name)
+// document.write(colors + "<br>")
+// var ind = parseInt(prompt("Write index on which you want to delete color"))
+// var number_of_colors = parseInt(prompt("How many colors do you want to delete"))
+// colors.splice(ind, number_of_colors)
+// document.write(colors + "<br>")
+
+// Q.no.10
+// var scores = [320, 280, 430, 180]
+// var sorted_scores = scores.sort()
+// document.write("Scores of Students: " + scores + "<br>")
+// document.write("Ordered scores of Students: " + sorted_scores + "<br>")
+
+// Q.no.11
+// var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Sukkur", "Rawalpindi"]
+// var selected_cities = cities.slice(2, 5)
+// document.write("Cities: " + cities + "<br>") 
+// document.write("Selected_Cities: " + selected_cities + "<br>") 
+
+// Q.no.12
+// var arr = ["This", "is", "my", "cat"]
+// var xyz = arr.join(" ")
+// document.write(xyz)
+
+// Q.no.13
+
+// Q.no.14
+
+// Q.no.15
+// var phone_manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"]
+// document.write("<select>")
+// document.write("<option>")
+// document.write(phone_manufacturers[0])
+// document.write("</option>")
+// document.write("<option>")
+// document.write(phone_manufacturers[1])
+// document.write("</option>")
+// document.write("<option>")
+// document.write(phone_manufacturers[2])
+// document.write("</option>")
+// document.write("<option>")
+// document.write(phone_manufacturers[3])
+// document.write("</option>")
+// document.write("<option>")
+// document.write(phone_manufacturers[4])
+// document.write("</option>")
+// document.write("<option>")
+// document.write(phone_manufacturers[5])
+// document.write("</option>")
+// document.write("</select>")
+
+//                ===========================================
+
+// Assigment No. 17 - 20
+// Arrays and Loop
+
+// Q.no.1
+// var arrs = [[], [], []]
+
+// Q.no.2
+// var arrs = [[0,1,2,3], [1,0,1,2], [2,1,0,1]]
+// document.write(arrs[0].join(" ") + "<br>")
+// document.write(arrs[1].join(" ") + "<br>")
+// document.write(arrs[2].join(" ") + "<br>")
+
+// Q.no.3
+// for(var i = 1; i < 11; i++){
+//     document.write(i + "<br>")
+// }
+
+// Q.no.4
+// var table_num = parseInt(prompt("Enter Table number"))
+// var table_len = parseInt(prompt("Enter Table length"))
+// for(var i = 0; i < table_len + 1; i++){
+//     document.write(table_num + "X" + i + "=" + table_num*i + "<br>")
+// }
+
+// Q.no.5
+// var fruits = ["apple", "orange", "mango" , "banana", "pineapple"]
+// var fruit_to_check = prompt("Enter fruit name")
+// var match_found = false
+// for(var i = 0; i < fruits.length; i++){
+//     if(fruit_to_check === fruits[i]){
+//         match_found = true
+//         alert(fruit_to_check + " is on Index number: " + i)
+//         break;
+//     }
+// }
+// if(match_found === false){
+//     alert("I's not on the list")
+// }
+
+// Q.no.6
+// document.write("<h1>Counting: </h1>" + "<br>")
+// for (var i = 0; i < 16; i++) {
+//     document.write(i + ",")
+// }
+// document.write("<h1>Reverse Counting: </h1>" + "<br>")
+// for (var i = 10; i > 0; i--) {
+//     document.write(i + ",")
+// }
+// document.write("<h1>Even: </h1>" + "<br>")
+// for (var i = 0; i < 11; i++) {
+//     document.write(i * 2 + ",")
+// }
+// document.write("<h1>Odd: </h1>" + "<br>")
+// for (var i = 0; i < 20; i++) {
+//     var mod = i % 2;
+//     if(mod != 0){
+//     document.write(i + ",")
+// }
+// }
+// document.write("<h1>Series: </h1>" + "<br>")
+// for (var i = 0; i < 11; i++) {
+//     document.write(i * 2 + "k" +",")
+// }
+
+// Q.no.7
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"]
+// var items_to_check = prompt("Enter item name").toLowerCase()
+// var match_found = false
+// for(var i = 0; i < A.length; i++){
+//     if(items_to_check === A[i]){
+//         match_found = true
+//         alert(items_to_check + " is available at Index number " + i + " in our bakery.")
+//         break;
+//     }
+// }
+// if(match_found === false){
+//     alert("We are sorry. " + items_to_check + " is not available in our bakery.")
+// }
+
+// Q.no.8
+// var arr = [24, 53, 78, 91, 12, 112, 147]
+// var largest;
+// for(var i = 0; i < arr.length; i++){
+//     largest = arr[i];
+//     for(var x = 0; x < arr.length; x++){
+//         var number = arr[x]
+//         if(number > largest){
+//             largest = number
+//         }
+//     }
+// }
+// document.write("<h1>" + largest + " is the Largest number in an Array." + "</h1>")
+
+// Q.no.9
+// var arr = [24, 53, 78, 3, 91, 12, 112, 147]
+// var smallest;
+// for(var i = 0; i < arr.length; i++){
+//     smallest = arr[i];
+//     for(var x = 0; x < arr.length; x++){
+//         var number = arr[x]
+//         if(number < smallest){
+//             smallest = number
+//         }
+//     }
+// }
+// document.write("<h1>" + smallest + " is the Smallest number in an Array." + "</h1>")
+
+// Q.no.10
+// for (var i = 1; i < 21; i++) {
+//     document.write(i * 5 + ",")
+// }
